@@ -1,0 +1,2510 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap);
+
+
+
+
+
+body {
+  font-family: Jost;
+}
+.display-1 {
+  font-family: 'Jost', sans-serif;
+  font-size: 4.6rem;
+  line-height: 1.1;
+}
+.display-1 > .mbr-iconfont {
+  font-size: 5.75rem;
+}
+.display-2 {
+  font-family: 'Jost', sans-serif;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+.display-2 > .mbr-iconfont {
+  font-size: 3.75rem;
+}
+.display-4 {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.display-4 > .mbr-iconfont {
+  font-size: 1.375rem;
+}
+.display-5 {
+  font-family: 'Jost', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+.display-5 > .mbr-iconfont {
+  font-size: 2.75rem;
+}
+.display-7 {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.display-7 > .mbr-iconfont {
+  font-size: 1.5rem;
+}
+/* ---- Fluid typography for mobile devices ---- */
+/* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
+/* 100vw - current viewport width */
+/* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
+/* 0.65 - min scale variable, may vary */
+@media (max-width: 992px) {
+  .display-1 {
+    font-size: 3.68rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.22rem;
+    font-size: calc( 2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.1 * (2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-2 {
+    font-size: 2.4rem;
+    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.3 * (1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-4 {
+    font-size: 0.88rem;
+    font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-5 {
+    font-size: 1.76rem;
+    font-size: calc( 1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-7 {
+    font-size: 0.96rem;
+    font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
+  }
+}
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+.btn-sm {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+.btn-md {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+.btn-lg {
+  padding: 1rem 2.6rem;
+  border-radius: 4px;
+}
+.bg-primary {
+  background-color: #6592e6 !important;
+}
+.bg-success {
+  background-color: #40b0bf !important;
+}
+.bg-info {
+  background-color: #47b5ed !important;
+}
+.bg-warning {
+  background-color: #ffe161 !important;
+}
+.bg-danger {
+  background-color: #4ab728 !important;
+}
+.btn-primary,
+.btn-primary:active {
+  background-color: #6592e6 !important;
+  border-color: #6592e6 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary.active {
+  color: #ffffff !important;
+  background-color: #2260d2 !important;
+  border-color: #2260d2 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff !important;
+  background-color: #2260d2 !important;
+  border-color: #2260d2 !important;
+}
+.btn-secondary,
+.btn-secondary:active {
+  background-color: #ff6666 !important;
+  border-color: #ff6666 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary.active {
+  color: #ffffff !important;
+  background-color: #ff0f0f !important;
+  border-color: #ff0f0f !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #ffffff !important;
+  background-color: #ff0f0f !important;
+  border-color: #ff0f0f !important;
+}
+.btn-info,
+.btn-info:active {
+  background-color: #47b5ed !important;
+  border-color: #47b5ed !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info.active {
+  color: #ffffff !important;
+  background-color: #148cca !important;
+  border-color: #148cca !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-info.disabled,
+.btn-info:disabled {
+  color: #ffffff !important;
+  background-color: #148cca !important;
+  border-color: #148cca !important;
+}
+.btn-success,
+.btn-success:active {
+  background-color: #40b0bf !important;
+  border-color: #40b0bf !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success.active {
+  color: #ffffff !important;
+  background-color: #2a747e !important;
+  border-color: #2a747e !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #ffffff !important;
+  background-color: #2a747e !important;
+  border-color: #2a747e !important;
+}
+.btn-warning,
+.btn-warning:active {
+  background-color: #ffe161 !important;
+  border-color: #ffe161 !important;
+  color: #614f00 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.focus,
+.btn-warning.active {
+  color: #0a0800 !important;
+  background-color: #ffd10a !important;
+  border-color: #ffd10a !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-warning.disabled,
+.btn-warning:disabled {
+  color: #614f00 !important;
+  background-color: #ffd10a !important;
+  border-color: #ffd10a !important;
+}
+.btn-danger,
+.btn-danger:active {
+  background-color: #4ab728 !important;
+  border-color: #4ab728 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.focus,
+.btn-danger.active {
+  color: #ffffff !important;
+  background-color: #2d7018 !important;
+  border-color: #2d7018 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-danger.disabled,
+.btn-danger:disabled {
+  color: #ffffff !important;
+  background-color: #2d7018 !important;
+  border-color: #2d7018 !important;
+}
+.btn-white,
+.btn-white:active {
+  background-color: #fafafa !important;
+  border-color: #fafafa !important;
+  color: #7a7a7a !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white.active {
+  color: #4f4f4f !important;
+  background-color: #cfcfcf !important;
+  border-color: #cfcfcf !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-white.disabled,
+.btn-white:disabled {
+  color: #7a7a7a !important;
+  background-color: #cfcfcf !important;
+  border-color: #cfcfcf !important;
+}
+.btn-black,
+.btn-black:active {
+  background-color: #232323 !important;
+  border-color: #232323 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-black:hover,
+.btn-black:focus,
+.btn-black.focus,
+.btn-black.active {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-black.disabled,
+.btn-black:disabled {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.btn-primary-outline,
+.btn-primary-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #6592e6;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:focus,
+.btn-primary-outline.focus,
+.btn-primary-outline.active {
+  color: #2260d2 !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-primary-outline.disabled,
+.btn-primary-outline:disabled {
+  color: #ffffff !important;
+  background-color: #6592e6 !important;
+  border-color: #6592e6 !important;
+}
+.btn-secondary-outline,
+.btn-secondary-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #ff6666;
+}
+.btn-secondary-outline:hover,
+.btn-secondary-outline:focus,
+.btn-secondary-outline.focus,
+.btn-secondary-outline.active {
+  color: #ff0f0f !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-secondary-outline.disabled,
+.btn-secondary-outline:disabled {
+  color: #ffffff !important;
+  background-color: #ff6666 !important;
+  border-color: #ff6666 !important;
+}
+.btn-info-outline,
+.btn-info-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #47b5ed;
+}
+.btn-info-outline:hover,
+.btn-info-outline:focus,
+.btn-info-outline.focus,
+.btn-info-outline.active {
+  color: #148cca !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-info-outline.disabled,
+.btn-info-outline:disabled {
+  color: #ffffff !important;
+  background-color: #47b5ed !important;
+  border-color: #47b5ed !important;
+}
+.btn-success-outline,
+.btn-success-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #40b0bf;
+}
+.btn-success-outline:hover,
+.btn-success-outline:focus,
+.btn-success-outline.focus,
+.btn-success-outline.active {
+  color: #2a747e !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-success-outline.disabled,
+.btn-success-outline:disabled {
+  color: #ffffff !important;
+  background-color: #40b0bf !important;
+  border-color: #40b0bf !important;
+}
+.btn-warning-outline,
+.btn-warning-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #ffe161;
+}
+.btn-warning-outline:hover,
+.btn-warning-outline:focus,
+.btn-warning-outline.focus,
+.btn-warning-outline.active {
+  color: #ffd10a !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-warning-outline.disabled,
+.btn-warning-outline:disabled {
+  color: #614f00 !important;
+  background-color: #ffe161 !important;
+  border-color: #ffe161 !important;
+}
+.btn-danger-outline,
+.btn-danger-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #4ab728;
+}
+.btn-danger-outline:hover,
+.btn-danger-outline:focus,
+.btn-danger-outline.focus,
+.btn-danger-outline.active {
+  color: #2d7018 !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-danger-outline.disabled,
+.btn-danger-outline:disabled {
+  color: #ffffff !important;
+  background-color: #4ab728 !important;
+  border-color: #4ab728 !important;
+}
+.btn-black-outline,
+.btn-black-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #232323;
+}
+.btn-black-outline:hover,
+.btn-black-outline:focus,
+.btn-black-outline.focus,
+.btn-black-outline.active {
+  color: #000000 !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-black-outline.disabled,
+.btn-black-outline:disabled {
+  color: #ffffff !important;
+  background-color: #232323 !important;
+  border-color: #232323 !important;
+}
+.btn-white-outline,
+.btn-white-outline:active {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: #fafafa;
+}
+.btn-white-outline:hover,
+.btn-white-outline:focus,
+.btn-white-outline.focus,
+.btn-white-outline.active {
+  color: #cfcfcf !important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+.btn-white-outline.disabled,
+.btn-white-outline:disabled {
+  color: #7a7a7a !important;
+  background-color: #fafafa !important;
+  border-color: #fafafa !important;
+}
+.text-primary {
+  color: #6592e6 !important;
+}
+.text-secondary {
+  color: #ff6666 !important;
+}
+.text-success {
+  color: #40b0bf !important;
+}
+.text-info {
+  color: #47b5ed !important;
+}
+.text-warning {
+  color: #ffe161 !important;
+}
+.text-danger {
+  color: #4ab728 !important;
+}
+.text-white {
+  color: #fafafa !important;
+}
+.text-black {
+  color: #232323 !important;
+}
+a.text-primary:hover,
+a.text-primary:focus,
+a.text-primary.active {
+  color: #205ac5 !important;
+}
+a.text-secondary:hover,
+a.text-secondary:focus,
+a.text-secondary.active {
+  color: #ff0000 !important;
+}
+a.text-success:hover,
+a.text-success:focus,
+a.text-success.active {
+  color: #266a73 !important;
+}
+a.text-info:hover,
+a.text-info:focus,
+a.text-info.active {
+  color: #1283bc !important;
+}
+a.text-warning:hover,
+a.text-warning:focus,
+a.text-warning.active {
+  color: #facb00 !important;
+}
+a.text-danger:hover,
+a.text-danger:focus,
+a.text-danger.active {
+  color: #286316 !important;
+}
+a.text-white:hover,
+a.text-white:focus,
+a.text-white.active {
+  color: #c7c7c7 !important;
+}
+a.text-black:hover,
+a.text-black:focus,
+a.text-black.active {
+  color: #000000 !important;
+}
+a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
+  position: relative;
+  background-image: transparent;
+  background-size: 10000px 2px;
+  background-repeat: no-repeat;
+  background-position: 0px 1.2em;
+  background-position: -10000px 1.2em;
+}
+a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption):hover {
+  transition: background-position 2s ease-in-out;
+  background-image: linear-gradient(currentColor 50%, currentColor 50%);
+  background-position: 0px 1.2em;
+}
+.nav-tabs .nav-link.active {
+  color: #6592e6;
+}
+.nav-tabs .nav-link:not(.active) {
+  color: #232323;
+}
+.alert-success {
+  background-color: #70c770;
+}
+.alert-info {
+  background-color: #47b5ed;
+}
+.alert-warning {
+  background-color: #ffe161;
+}
+.alert-danger {
+  background-color: #4ab728;
+}
+.mbr-gallery-filter li.active .btn {
+  background-color: #6592e6;
+  border-color: #6592e6;
+  color: #ffffff;
+}
+.mbr-gallery-filter li.active .btn:focus {
+  box-shadow: none;
+}
+a,
+a:hover {
+  color: #6592e6;
+}
+.mbr-plan-header.bg-primary .mbr-plan-subtitle,
+.mbr-plan-header.bg-primary .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-success .mbr-plan-subtitle,
+.mbr-plan-header.bg-success .mbr-plan-price-desc {
+  color: #a0d8df;
+}
+.mbr-plan-header.bg-info .mbr-plan-subtitle,
+.mbr-plan-header.bg-info .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-warning .mbr-plan-subtitle,
+.mbr-plan-header.bg-warning .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-danger .mbr-plan-subtitle,
+.mbr-plan-header.bg-danger .mbr-plan-price-desc {
+  color: #94e27c;
+}
+/* Scroll to top button*/
+.scrollToTop_wraper {
+  display: none;
+}
+.form-control {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form-control > .mbr-iconfont {
+  font-size: 1.375rem;
+}
+.form-control:hover,
+.form-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+  border-color: #6592e6 !important;
+}
+.form-control:-webkit-input-placeholder {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form-control:-webkit-input-placeholder > .mbr-iconfont {
+  font-size: 1.375rem;
+}
+blockquote {
+  border-color: #6592e6;
+}
+/* Forms */
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #6592e6;
+  color: #ffffff;
+}
+.jq-number__spin {
+  transition: 0.25s ease;
+}
+.jq-number__spin:hover {
+  border-color: #6592e6;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: #353535;
+  border-bottom-color: #353535;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #6592e6;
+  border-bottom-color: #6592e6;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #6592e6 !important;
+  box-shadow: none !important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #000000 !important;
+  background: #ff6666 !important;
+  box-shadow: none !important;
+}
+.lazy-bg {
+  background-image: none !important;
+}
+.lazy-placeholder:not(section),
+.lazy-none {
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: auto;
+}
+iframe.lazy-placeholder,
+.lazy-placeholder:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: transparent no-repeat center;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' stroke='%236592e6' %3e%3cg fill='none' fill-rule='evenodd'%3e%3cg transform='translate(16 16)' stroke-width='2'%3e%3ccircle stroke-opacity='.5' cx='16' cy='16' r='16'/%3e%3cpath d='M32 16c0-9.94-8.06-16-16-16'%3e%3canimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='1s' repeatCount='indefinite'/%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+}
+section.lazy-placeholder:after {
+  opacity: 0.5;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  transition: color 0.6s;
+}
+.cid-tnKy1AaWLp {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/adaptasimakhluk-hidup-1587x2245.png");
+}
+.cid-tnKy1AaWLp .row {
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .cid-tnKy1AaWLp .row {
+    flex-direction: column-reverse;
+  }
+  .cid-tnKy1AaWLp .image-wrapper {
+    margin-bottom: 2rem;
+  }
+  .cid-tnKy1AaWLp .card-wrapper {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tnKy1AaWLp .card-wrapper {
+    padding-right: 2rem;
+  }
+}
+.cid-tnKy1AaWLp .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-tnJSdPsqGk {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1080x1920.png");
+}
+.cid-tnJSdPsqGk .image-wrap img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnJSdPsqGk .image-wrap img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+.cid-tnLOk2EhPC {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-tnLTFxOZYW {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-tnLTFxOZYW .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnJVrcJBkF {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/background3.jpg");
+}
+.cid-tnJVrcJBkF .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnJVrcJBkF img,
+.cid-tnJVrcJBkF .item-img {
+  width: 100%;
+}
+.cid-tnJVrcJBkF .item:focus,
+.cid-tnJVrcJBkF span:focus {
+  outline: none;
+}
+.cid-tnJVrcJBkF .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnJVrcJBkF .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnJVrcJBkF .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnJVrcJBkF .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnJVrcJBkF .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnJVrcJBkF .mbr-section-title {
+  color: #65c6d4;
+}
+.cid-tnJVrcJBkF .mbr-text,
+.cid-tnJVrcJBkF .mbr-section-btn {
+  text-align: left;
+  color: #e43f3f;
+}
+.cid-tnJVrcJBkF .item-title {
+  text-align: left;
+  color: #4479d9;
+}
+.cid-tnJVrcJBkF .item-subtitle {
+  text-align: left;
+}
+.cid-tnJZjlTICq {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnJZjlTICq .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnJZjlTICq img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnJZjlTICq .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnLT4Llmra {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnK12JpmiR {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/adaptasimakhluk-hidup-1587x2245.png");
+}
+@media (max-width: 991px) {
+  .cid-tnK12JpmiR .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnK12JpmiR .row {
+  flex-direction: row-reverse;
+}
+.cid-tnK12JpmiR img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnK12JpmiR .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnK12JpmiR .mbr-text {
+  color: #353535;
+}
+.cid-tnK12JpmiR .mbr-section-title {
+  color: #4479d9;
+}
+.cid-tnK2YCQe4l {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/peringatan-hari-lahir-nahdlatul-ulama-instagram-post-1080x1920.png");
+}
+.cid-tnK2YCQe4l .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnK2YCQe4l img,
+.cid-tnK2YCQe4l .item-img {
+  width: 100%;
+}
+.cid-tnK2YCQe4l .item:focus,
+.cid-tnK2YCQe4l span:focus {
+  outline: none;
+}
+.cid-tnK2YCQe4l .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnK2YCQe4l .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #ff0000;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnK2YCQe4l .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnK2YCQe4l .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnK2YCQe4l .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnK2YCQe4l .mbr-section-title {
+  color: #e43f3f;
+}
+.cid-tnK2YCQe4l .mbr-text,
+.cid-tnK2YCQe4l .mbr-section-btn {
+  text-align: left;
+  color: #ffffff;
+}
+.cid-tnK2YCQe4l .item-title {
+  text-align: left;
+  color: #ffffff;
+}
+.cid-tnK2YCQe4l .item-subtitle {
+  text-align: center;
+}
+.cid-tnK2YCQe4l P {
+  color: #ffffff;
+}
+.cid-tnLUggLXMT {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLUggLXMT .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnK89xGmyO {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/kantong-semar-960x720.jpg");
+}
+.cid-tnK89xGmyO .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnK89xGmyO img,
+.cid-tnK89xGmyO .item-img {
+  width: 100%;
+}
+.cid-tnK89xGmyO .item:focus,
+.cid-tnK89xGmyO span:focus {
+  outline: none;
+}
+.cid-tnK89xGmyO .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnK89xGmyO .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #6592e6;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnK89xGmyO .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnK89xGmyO .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnK89xGmyO .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnK89xGmyO .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tnK89xGmyO .mbr-text,
+.cid-tnK89xGmyO .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnK89xGmyO .item-title {
+  text-align: left;
+}
+.cid-tnK89xGmyO .item-subtitle {
+  text-align: center;
+}
+.cid-tnK89xGmyO .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-tnLVdSvcwI {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLVdSvcwI .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnK9SpaH6O {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnK9SpaH6O .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnK9SpaH6O img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnK9SpaH6O .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnLVwcglBa {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLVwcglBa .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKe6T8amE {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+.cid-tnKe6T8amE .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKe6T8amE img,
+.cid-tnKe6T8amE .item-img {
+  width: 100%;
+}
+.cid-tnKe6T8amE .item:focus,
+.cid-tnKe6T8amE span:focus {
+  outline: none;
+}
+.cid-tnKe6T8amE .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKe6T8amE .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKe6T8amE .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKe6T8amE .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKe6T8amE .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKe6T8amE .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKe6T8amE .mbr-text,
+.cid-tnKe6T8amE .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKe6T8amE .item-title {
+  text-align: left;
+}
+.cid-tnKe6T8amE .item-subtitle {
+  text-align: center;
+}
+.cid-tnLW4C1lDF {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLW4C1lDF .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKKkAMdaO {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #2299aa;
+}
+@media (max-width: 991px) {
+  .cid-tnKKkAMdaO .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnKKkAMdaO img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnKKkAMdaO .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnLVNcOrXn {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLVNcOrXn .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKfiGZOqG {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+.cid-tnKfiGZOqG .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKfiGZOqG img,
+.cid-tnKfiGZOqG .item-img {
+  width: 100%;
+}
+.cid-tnKfiGZOqG .item:focus,
+.cid-tnKfiGZOqG span:focus {
+  outline: none;
+}
+.cid-tnKfiGZOqG .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKfiGZOqG .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #4479d9;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKfiGZOqG .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKfiGZOqG .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKfiGZOqG .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKfiGZOqG .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKfiGZOqG .mbr-text,
+.cid-tnKfiGZOqG .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKfiGZOqG .item-title {
+  text-align: left;
+}
+.cid-tnKfiGZOqG .item-subtitle {
+  text-align: center;
+}
+.cid-tnLWkokUuC {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLWkokUuC .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKfKmIPON {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+.cid-tnKfKmIPON .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKfKmIPON img,
+.cid-tnKfKmIPON .item-img {
+  width: 100%;
+}
+.cid-tnKfKmIPON .item:focus,
+.cid-tnKfKmIPON span:focus {
+  outline: none;
+}
+.cid-tnKfKmIPON .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKfKmIPON .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #4ab728;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKfKmIPON .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKfKmIPON .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKfKmIPON .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKfKmIPON .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKfKmIPON .mbr-text,
+.cid-tnKfKmIPON .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKfKmIPON .item-title {
+  text-align: left;
+}
+.cid-tnKfKmIPON .item-subtitle {
+  text-align: center;
+}
+.cid-tnLWLLqGNn {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLWLLqGNn .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKgAnQj85 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #4ab728;
+}
+.cid-tnKgAnQj85 img,
+.cid-tnKgAnQj85 .item-img {
+  width: 100%;
+}
+.cid-tnKgAnQj85 .item:focus,
+.cid-tnKgAnQj85 span:focus {
+  outline: none;
+}
+.cid-tnKgAnQj85 .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKgAnQj85 .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKgAnQj85 .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKgAnQj85 .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKgAnQj85 .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKgAnQj85 .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKgAnQj85 .mbr-text,
+.cid-tnKgAnQj85 .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKgAnQj85 .item-title {
+  text-align: left;
+}
+.cid-tnKgAnQj85 .item-subtitle {
+  text-align: center;
+}
+.cid-tnKiU17VEf {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-tnKiU17VEf img,
+.cid-tnKiU17VEf .item-img {
+  width: 100%;
+}
+.cid-tnKiU17VEf .item:focus,
+.cid-tnKiU17VEf span:focus {
+  outline: none;
+}
+.cid-tnKiU17VEf .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKiU17VEf .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #4479d9;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKiU17VEf .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKiU17VEf .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKiU17VEf .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKiU17VEf .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKiU17VEf .mbr-text,
+.cid-tnKiU17VEf .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKiU17VEf .item-title {
+  text-align: center;
+}
+.cid-tnKiU17VEf .item-subtitle {
+  text-align: center;
+}
+.cid-tnLX1syLfq {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLX1syLfq .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKkfAFuAy {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+.cid-tnKkfAFuAy .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKkfAFuAy img,
+.cid-tnKkfAFuAy .item-img {
+  width: 100%;
+}
+.cid-tnKkfAFuAy .item:focus,
+.cid-tnKkfAFuAy span:focus {
+  outline: none;
+}
+.cid-tnKkfAFuAy .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKkfAFuAy .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #4479d9;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKkfAFuAy .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKkfAFuAy .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKkfAFuAy .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKkfAFuAy .mbr-section-title {
+  color: #232323;
+}
+.cid-tnKkfAFuAy .mbr-text,
+.cid-tnKkfAFuAy .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKkfAFuAy .item-title {
+  text-align: left;
+}
+.cid-tnKkfAFuAy .item-subtitle {
+  text-align: center;
+}
+.cid-tnLXyI2KnW {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLXyI2KnW .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKn190Cua {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+.cid-tnKn190Cua .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKn190Cua img,
+.cid-tnKn190Cua .item-img {
+  width: 100%;
+}
+.cid-tnKn190Cua .item:focus,
+.cid-tnKn190Cua span:focus {
+  outline: none;
+}
+.cid-tnKn190Cua .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKn190Cua .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKn190Cua .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKn190Cua .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKn190Cua .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKn190Cua .mbr-section-title {
+  color: #ff0000;
+}
+.cid-tnKn190Cua .mbr-text,
+.cid-tnKn190Cua .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKn190Cua .item-title {
+  text-align: left;
+}
+.cid-tnKn190Cua .item-subtitle {
+  text-align: center;
+}
+.cid-tnLY6mRjWM {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnLY6mRjWM .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnKoKuxCIY {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1080x1920.png");
+}
+.cid-tnKoKuxCIY .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKoKuxCIY img,
+.cid-tnKoKuxCIY .item-img {
+  width: 100%;
+}
+.cid-tnKoKuxCIY .item:focus,
+.cid-tnKoKuxCIY span:focus {
+  outline: none;
+}
+.cid-tnKoKuxCIY .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKoKuxCIY .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #ff0000;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKoKuxCIY .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKoKuxCIY .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKoKuxCIY .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKoKuxCIY .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tnKoKuxCIY .mbr-text,
+.cid-tnKoKuxCIY .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKoKuxCIY .item-title {
+  text-align: center;
+}
+.cid-tnKoKuxCIY .item-subtitle {
+  text-align: center;
+}
+.cid-tnKoKuxCIY .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-tnLYptFlBE {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnKsjexeL1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1080x1920.png");
+}
+.cid-tnKsjexeL1 .mbr-overlay {
+  background: #fafafa;
+  opacity: 0.1;
+}
+.cid-tnKsjexeL1 img,
+.cid-tnKsjexeL1 .item-img {
+  width: 100%;
+}
+.cid-tnKsjexeL1 .item:focus,
+.cid-tnKsjexeL1 span:focus {
+  outline: none;
+}
+.cid-tnKsjexeL1 .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKsjexeL1 .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKsjexeL1 .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKsjexeL1 .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKsjexeL1 .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKsjexeL1 .mbr-section-title {
+  color: #ffe161;
+}
+.cid-tnKsjexeL1 .mbr-text,
+.cid-tnKsjexeL1 .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKsjexeL1 .item-title {
+  text-align: center;
+}
+.cid-tnKsjexeL1 .item-subtitle {
+  text-align: center;
+}
+.cid-tnKsjexeL1 .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-tnLYCvLOzR {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnKBo3LZ94 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1080x1920.png");
+}
+.cid-tnKBo3LZ94 .mbr-overlay {
+  background: #4ab728;
+  opacity: 0.1;
+}
+.cid-tnKBo3LZ94 img,
+.cid-tnKBo3LZ94 .item-img {
+  width: 100%;
+}
+.cid-tnKBo3LZ94 .item:focus,
+.cid-tnKBo3LZ94 span:focus {
+  outline: none;
+}
+.cid-tnKBo3LZ94 .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-tnKBo3LZ94 .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #ff0000;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-tnKBo3LZ94 .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-tnKBo3LZ94 .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-tnKBo3LZ94 .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-tnKBo3LZ94 .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tnKBo3LZ94 .mbr-text,
+.cid-tnKBo3LZ94 .mbr-section-btn {
+  text-align: left;
+}
+.cid-tnKBo3LZ94 .item-title {
+  text-align: center;
+}
+.cid-tnKBo3LZ94 .item-subtitle {
+  text-align: center;
+}
+.cid-tnKBo3LZ94 .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-tnLQqJ39sc {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnKI1Rz81t {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #4479d9;
+}
+@media (max-width: 991px) {
+  .cid-tnKI1Rz81t .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnKI1Rz81t .row {
+  flex-direction: row-reverse;
+}
+.cid-tnKI1Rz81t img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnKI1Rz81t .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnKI1Rz81t .mbr-text {
+  color: #ffffff;
+}
+.cid-tnKI1Rz81t .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tnLPb50iBc {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fafafa;
+}
+.cid-tnLPb50iBc .mbr-iconfont {
+  display: block;
+  font-size: 4rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-tnLPb50iBc .card-wrapper {
+  min-height: 220px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cid-tnLHquIOLV {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #4479d9;
+}
+@media (min-width: 1500px) {
+  .cid-tnLHquIOLV .container {
+    max-width: 1400px;
+  }
+}
+.cid-tnLHquIOLV .mbr-iconfont {
+  display: block;
+  font-size: 5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.cid-tnLHquIOLV .card-wrapper {
+  margin-top: 3rem;
+}
+.cid-tnLHquIOLV .row {
+  justify-content: center;
+}
+.cid-tnLHquIOLV .mbr-section-title {
+  color: #ffffff;
+}
+.cid-tnLHCwgbyC {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #4479d9;
+}
+.cid-tnLHCwgbyC .mbr-iconfont {
+  display: block;
+  font-size: 4rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-tnLHCwgbyC .card-wrapper {
+  min-height: 220px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cid-tnLHCwgbyC .card-title,
+.cid-tnLHCwgbyC .card-box {
+  color: #4479d9;
+}
+.cid-tnLI975DMv {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #4479d9;
+}
+.cid-tnLI975DMv .mbr-iconfont {
+  display: block;
+  font-size: 4rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-tnLI975DMv .card-wrapper {
+  min-height: 220px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cid-tnLI975DMv .card-title,
+.cid-tnLI975DMv .card-box {
+  color: #4479d9;
+}
+.cid-tnLRLIF9sh {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ff0000;
+}
+.cid-tnLRLIF9sh .mbr-text {
+  color: #6592e6;
+}
+.cid-tnLRLIF9sh .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-tnLSrmE4i3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM22DkQ50 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM22DkQ50 .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnM3JysaAL {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-tnM3JysaAL .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnM3JysaAL img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnM3JysaAL .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnM3XCOX8v {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM5WDPNcH {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnM5WDPNcH .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnM5WEFuWT {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-3-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnM5WEFuWT .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnM5WEFuWT img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnM5WEFuWT .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnM5WG7Sco {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM7DifQNr {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnM7DifQNr .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnM7Dj1VoP {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnM7Dj1VoP .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnM7Dj1VoP img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnM7Dj1VoP .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnM7DkoVr8 {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM94oZEQb {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnM94oZEQb .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnM94pSwWg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnM94pSwWg .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnM94pSwWg img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnM94pSwWg .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnM94s79VW {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnM9T3Gz6Y {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnM9T3Gz6Y .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnM9T4FGPc {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-3-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnM9T4FGPc .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnM9T4FGPc img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnM9T4FGPc .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnM9T7cnLK {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMau3R6IC {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMau3R6IC .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMau5q0ny {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMau5q0ny .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMau5q0ny img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMau5q0ny .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMau75zTb {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMaVXO1T8 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMaVXO1T8 .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMaVYBI9e {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-3-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMaVYBI9e .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMaVYBI9e img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMaVYBI9e .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMaVZXCJx {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMbGUrzwJ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMbGUrzwJ .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMbGVb74r {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMbGVb74r .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMbGVb74r img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMbGVb74r .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMbGWEPxo {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMcbn90do {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMcbn90do .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMcbo6Wep {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMcbo6Wep .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMcbo6Wep img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMcbo6Wep .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMcbpSvJf {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMcERvi2n {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMcERvi2n .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMcESiwbx {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMcESiwbx .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMcESiwbx img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMcESiwbx .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMcEUa7nb {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMdC2CC8D {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMdC2CC8D .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMdC4eoHr {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMdC4eoHr .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMdC4eoHr img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMdC4eoHr .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMdC5CD1m {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMe1d0bGZ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMe1d0bGZ .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMe1efg93 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMe1efg93 .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMe1efg93 img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMe1efg93 .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMe1fsSP4 {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMf40y4Qm {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMf40y4Qm .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMf41nyTI {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMf41nyTI .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMf41nyTI img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMf41nyTI .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMf42Kkex {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMfvp0jcS {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMfvp0jcS .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMfvpQz7B {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/peringatan-hari-lahir-nahdlatul-ulama-instagram-post-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMfvpQz7B .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMfvpQz7B img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMfvpQz7B .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMfvsfi8E {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMi1zez64 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMi1zez64 .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMi1Ejj9j {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/peringatan-hari-lahir-nahdlatul-ulama-instagram-post-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMi1Ejj9j .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMi1Ejj9j img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMi1Ejj9j .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMi1Gcm2L {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMimgugZb {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMimgugZb .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMimhAnqb {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMimhAnqb .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMimhAnqb img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMimhAnqb .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMimjJ5OZ {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMiSp2Z3e {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMiSp2Z3e .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMiSqPMmR {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMiSqPMmR .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMiSqPMmR img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMiSqPMmR .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMiSthvhf {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMjmCyjJj {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMjmCyjJj .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMjmDEADh {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMjmDEADh .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMjmDEADh img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMjmDEADh .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMjmFEeHU {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMk1vKWeB {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMk1vKWeB .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMk1wLBDY {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMk1wLBDY .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMk1wLBDY img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMk1wLBDY .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMk1yPNJP {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMkmtDowr {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMkmtDowr .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMkmuJzRy {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMkmuJzRy .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMkmuJzRy img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMkmuJzRy .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMkmxhA5F {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-tnMlkVMQ2x {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #4ab728;
+}
+.cid-tnMlkVMQ2x .mbr-section-btn {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-tnMlkXgYK8 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/desain-tanpa-judul-1-1080x1920.png");
+}
+@media (max-width: 991px) {
+  .cid-tnMlkXgYK8 .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-tnMlkXgYK8 img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-tnMlkXgYK8 .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tnMlkZPgMp {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
